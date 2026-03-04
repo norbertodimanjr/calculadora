@@ -6,34 +6,33 @@ while True:
     if (operador == "sair"):
         break
 
-    a = input("Digite o valor A: ")
-    b = input("Digite o valor B: ")
+    a = float(input("Digite o valor A: "))
+    b = float(input("Digite o valor B: "))
 
-    
     if (operador == "+"):
         try:
-            print(f"A soma de {a} + {b} = {calcular.somar(a, b)}")
+            print(f"A soma de {a:.2f} + {b:.2f} = {calcular.somar(a, b):.2f}")
         except ValueError:
             print("Digite apenas números")
         except:
             print("Erro! Entre em contato com o suporte técnico.")
     if (operador == "-"):
         try:
-            print(f"A subtração de {a} - {b} = {calcular.subtrair(a, b)}")
+            print(f"A subtração de {a:.2f} - {b:.2f} = {calcular.subtrair(a, b):.2f}")
         except ValueError:
             print("Digite apenas números!")
         except:
             print("Erro! Entre em contato com o suporte técnico.")
     if (operador == "*"):
         try:
-            print(f"A multiplicação de {a} * {b} = {calcular.multiplicar(a, b)}")
+            print(f"A multiplicação de {a:.2f} * {b:.2f} = {calcular.multiplicar(a, b):.2f}")
         except ValueError:
             print("Digite apenas números!")
         except:
             print("Erro! Entre em contato com o suporte técnico.")
     if (operador == "/"):
         try:
-            print(f"A divisão de {a} / {b} = {calcular.dividir(a, b)}")
+            print(f"A divisão de {a:.2f} / {b:.2f} = {calcular.dividir(a, b):.2f}")
         except ValueError:
             print("Digite apenas números!")
         except ZeroDivisionError:
