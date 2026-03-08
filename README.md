@@ -1,1 +1,1 @@
-A calculator wrote in python!
+Uma calculadora usando python
